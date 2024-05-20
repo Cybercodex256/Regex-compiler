@@ -1,0 +1,20 @@
+<html>
+<body>
+	<h1 font-size="50px"style="color:blue;text-align:left;">Browser specifications</h1>
+<p id="demo"></p>
+<script>
+ function chkBrowser()
+ {
+ var content =[navigator.appName,navigator.appCodeName,navigator.platform,navigator.cookieEnabled,navigator.appVersion,navigator.userAgent,navigator.javaEnabled,navigator.product];
+ var conlen = content.length;
+ var text = "<ol>";
+for (i = 0; i < conlen;
+i++)
+document.getElementById("demo").innerHTML=
+ text += "<li>"+ content[i] +"</li>";text += "</ol>";
+}
+chkBrowser();
+ 
+ </script>
+ </body>
+ </html>
